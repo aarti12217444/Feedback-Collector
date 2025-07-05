@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback Collector</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💬 Customer Feedback</h1>
+
+    <form id="feedbackForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Your name" required />
+
+      <label for="rating">Rating:</label>
+      <select id="rating" required>
+        <option value="">Select rating</option>
+        <option value="⭐">⭐</option>
+        <option value="⭐⭐">⭐⭐</option>
+        <option value="⭐⭐⭐">⭐⭐⭐</option>
+        <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+        <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+      </select>
+
+      <label for="comment">Comment:</label>
+      <textarea id="comment" rows="4" placeholder="Your feedback" required></textarea>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+
+    <h2>⭐ Feedback Received</h2>
+    <div id="feedbackList"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
